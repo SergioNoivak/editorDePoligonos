@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1042.0" prefWidth="1204.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg7dejulho.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" minHeight="16" minWidth="69" prefHeight="663.0" prefWidth="558.0" />
+      <Pane layoutX="5.0" layoutY="9.0" prefHeight="1031.0" prefWidth="132.0" style="-fx-background-color: #D2B48C;">
+         <children>
+            <Button fx:id="btnPoligonoIrregular" layoutX="8.0" layoutY="252.0" mnemonicParsing="false" onAction="#clickButtonPoligonoIrregular" prefHeight="31.0" prefWidth="114.0" text="Poligono Irregular" />
+            <Button layoutX="9.0" layoutY="14.0" mnemonicParsing="false" text="SELECAO" />
+            <Button layoutX="87.0" layoutY="14.0" mnemonicParsing="false" text="X" />
+            <Button layoutX="9.0" layoutY="51.0" mnemonicParsing="false" text="Triangulo" />
+            <Button layoutX="9.0" layoutY="89.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Retangulo" />
+            <Button layoutX="9.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Pentagono" />
+            <Button layoutX="9.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.0" text="Hexagono" />
+            <Accordion layoutY="229.0" />
+            <TextField fx:id="numeroDeLados" layoutX="70.0" layoutY="204.0" prefHeight="25.0" prefWidth="48.0" />
+            <Button layoutX="9.0" layoutY="204.0" mnemonicParsing="false" onAction="#clickButtonRegular" text="Regular" />
+         </children>
+      </Pane>
+      <Pane layoutX="135.0" layoutY="14.0" prefHeight="1021.0" prefWidth="1062.0" style="-fx-background-color: white;">
+         <children>
+            <Canvas fx:id="canvas" height="1011.0" layoutX="37.0" onMouseClicked="#clickCanvas" style="-fx-fill-color: red;" width="1011.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
